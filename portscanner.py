@@ -1,5 +1,8 @@
 # Multithreaded Port Scanner
-
+#Pratik Gade
+#The practice of attempting to connect to a range of ports in sequence on a single host is commonly known as port scanning.
+# This is usually associated either with malicious cracking attempts or with network administrators looking for possible vulnerabilities to help prevent such attacks.
+# Port connection attempts are frequently monitored and logged by hosts. The technique of port knocking uses a series of port connections (knocks) from a client computer to enable a server connection.
 from queue import Queue #Since our threads run simultaneously and scan the ports, we use queues to make sure that every port is only scanned once.
 import socket #Threading will allow us to run multiple scanning functions simultaneously.
 import threading #Socket will be used for our connection attempts to the host at a specific port.
